@@ -1,0 +1,203 @@
+.page {
+  background-color: #0d044b;
+}
+.main {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+}
+.main-form {
+  background-color: #fff;
+  padding: 10px 20px 30px 20px;
+  border-radius: 10px;
+}
+h1 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "PT Sans Caption", sans-serif;
+}
+h2 {
+  font-family: "PT Sans Caption", sans-serif;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+.gender {
+  display: flex;
+}
+.gender li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 35px;
+}
+.gender input[type="radio"] {
+  position: absolute;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+}
+.gender-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+  font-family: "PT Sans Caption", sans-serif;
+  border: 1px solid #50ffd9;
+}
+.gender input[type="radio"]:checked + .gender-label {
+  color: #fff;
+  background-color: #dd957a;
+  cursor: default;
+}
+.right-label {
+  border-radius: 0 5px 5px 0;
+}
+.left-label {
+  border-radius: 5px 0 0 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px 0;
+}
+.grid-item:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-item:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.grid-item-label {
+  padding-right: 15px;
+}
+.grid-item input {
+  width: 45px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid rgb(114, 10, 10);
+  padding: 10px;
+}
+.grid-item label {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
+}
+.grid-item span {
+  color: #808080;
+  font-family: "PT Sans Caption", sans-serif;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+:-moz-placeholder {
+  text-align: center;
+}
+::-moz-placeholder {
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
+legend {
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: "PT Sans Caption", sans-serif;
+  margin-bottom: 20px;
+}
+.check-section p {
+  font-size: 15px;
+  color: #808080;
+  font-family: "PT Sans Caption", sans-serif;
+  margin: 5px 0 20px 0;
+  padding-left: 25px;
+}
+.check-section label {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
+}
+.check-section input:checked + label {
+  color: #ff7f50;
+}
+.form_radio {
+  margin-bottom: 10px;
+}
+.form_radio input[type="radio"] {
+  display: none;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.form_radio label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(/img/icon-radio-empty.svg) 0 0 no-repeat;
+}
+.form_radio input[type="radio"]:checked + label:before {
+  background: url(/img/icon-radio-checked.svg) 0 0 no-repeat;
+}
+.form_radio label:hover:before {
+  filter: brightness(120%);
+}
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submit {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #808080;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+}
